@@ -1,0 +1,274 @@
+/* The Rails "Flash" section; messages displayed to users on their [usually] subsequent request */
+div#flash {
+    color: blue;
+}
+
+div#flash_error {
+    color: red;
+}
+
+/* The default Rails error message styles */
+div.errorExplanation {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+div.errorExplanation h2 {
+    display: block;
+}
+
+div.errorExplanation h2 + p {
+    clear: left;
+}
+
+div.fieldWithErrors {
+    border: 1px dashed #f99;
+}
+
+div.fieldWithErrors div.fieldWithErrors {
+    display: inline;
+    border: none;
+}
+
+/* Use headertop to lay out tables when the row of <th>'s (even if it's not present) appears at the top. This "fixes" some poor (IMO - Paul) defaults in HTML tables. Using this class allows us to uniformly improve the look of every table matching this description while still making it possible to override later on when this definition no longer suits us. */
+table.headertop {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.headertop th {
+    vertical-align: top;
+    text-align: center;
+    white-space: nowrap;
+}
+
+table.headertop td {
+    vertical-align: top;
+    text-align: left;
+}
+
+/* As with headertop, headerleft is used to lay out tables where the <th>'s appear in a left-hand column, as is usually done in forms. Again, this "improves" poor HTML table defaults, and is easily overrideable using the CSS cascade. */
+table.headerleft th {
+    vertical-align: top;
+    text-align: right;
+    padding-right: 1em;
+    white-space: nowrap;
+}
+
+table.headerleft td {
+    vertical-align: top;
+}
+
+/* horizpadd is used to give a bit of space between columns */
+table.horizpadd td, th {
+    padding-right: 1em;
+}
+
+table.my_photos {
+    margin: 0 50px;
+}
+
+table.my_photos td {
+    width: 146px;
+    margin-right: 12px;
+    padding-bottom: 15px;
+}
+
+tr.alternate {
+    background-color: #eaeaea;
+}
+
+tr.row:hover {
+  background-color: #ffa;
+}
+
+/* link_error is for the metadata system */
+span.link_error {
+    font-size :smaller;
+    color: red;
+}
+
+/* "value" and "label" are used like they are in an Excel spreadsheet; values (numeric) are aligned right and labels (text) are aligned left. */
+th.value, td.value {
+    text-align: right !important;
+}
+
+th.label, td.label {
+    text-align: left;
+}
+
+/* This "hint" class is typically used in a form to give a data entry hint to a user. A typical overriding of "hint" might reduce the font size. */
+span.hint {
+    display: block;
+}
+
+/* Some good defaults for forms so we can use labels rather than tables */
+form {
+}
+
+span.field {
+    display: block;
+    padding-bottom: 3px;
+    /* clear:  left; - not entirely sure why this was here in the first place - do we need it? */
+}
+
+span.field span.row_controls {
+    clear: left;
+    float: left;
+    width: 51px;
+}
+
+span.field span.row_controls + label {
+    width: 70px;
+    padding-right: 0.7em;
+    padding-left: 14px;
+    clear: none;
+}
+
+span.field input, span.field select {
+}
+
+.field {
+	display: block;
+	/* clear: left; - see note above */
+	margin: 0 0 15px;
+}
+
+.field label {
+	float: left;
+	width: 145px;  
+	margin: 0 15px 0 0;
+	text-align: right;	
+}
+
+.field .submit {
+	margin: 0 0 0 160px;
+}
+
+.nogap .field, .nogap.field {
+    margin: 0;
+}
+
+.nolabel {
+	margin-left: 160px !important;
+}
+
+.required {
+    color: #f00;
+}
+
+.greyed {
+    color: #888;
+}
+
+/*********************************************************
+ * Some visual design I like to use on multiple projects *
+ *********************************************************/
+
+.prettybox_top div {
+    /*background: url("/images/lm/tl.gif") no-repeat top left;*/
+}
+
+.prettybox_top {
+    /*background: url("/images/lm/tr.gif") no-repeat top right;*/
+}
+
+.prettybox_bot div {
+    /*background: url("/images/lm/bl.gif") no-repeat bottom left;*/
+}
+
+.prettybox_bot {
+    /*background: url("/images/lm/br.gif") no-repeat bottom right;*/
+}
+
+.prettybox_top div, .prettybox_top, .prettybox_bot div, .prettybox_bot {
+    font-size: 1px;
+    height: 7px;
+    width: 100%;
+    display:none;
+}
+
+div.prettybox_inside {
+    position: relative;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top:0px;
+    padding-left:10px;
+
+
+}
+
+/* classes are named after colours because the purpose is generic */
+div.prettybox_blue {
+    background: url("/images/lm/blue.gif") repeat-x;
+}
+
+div.prettybox_simpleblue {
+    background-color: #8dbcff;
+}
+
+div.prettybox_bluelight {
+    background: url("/images/lm/blue-light.png") repeat-x;
+}
+
+div.prettybox_blush {
+    background: url("/images/lm/blush.gif") repeat;
+}
+
+div.prettybox_green {
+    background: url("/images/lm/green.gif") repeat-x;
+}
+
+div.prettybox_simplegreen {
+    background-color: #beff8d;
+}
+
+div.prettybox_greenlight {
+    background: url("/images/lm/green-light.png") repeat-x;
+}
+
+div.prettybox_limegreen {
+    background: url("/images/lm/limegreen.gif") repeat;
+}
+
+div.prettybox_grey {
+    background: url("/images/lm/grey.gif") repeat;
+}
+
+div.prettybox_bottomgrey {
+    background: url("/images/lm/grey.gif") bottom repeat-x;
+}
+
+div.prettybox_palegreen {
+    background: url("/images/lm/palegreen.gif") repeat;
+}
+
+div.prettybox_raspberry {
+    background: url("/images/lm/raspberry.gif") repeat-x;
+}
+
+div.prettybox_simpleraspberry {
+    background-color: #ff8da9;
+}
+
+div.prettybox_raspberrylight {
+    background: url("/images/lm/raspberry-light.png") repeat-x;
+}
+
+div.prettybox_skyblue {
+    background: url("/images/lm/skyblue.gif") repeat;
+}
+
+div.prettybox_yellow {
+    background: url("/images/lm/yellow.gif") repeat-x;
+}
+
+div.prettybox_simpleyellow {
+    background-color: #ffdd8d;
+}
+
+div.prettybox_yellowlight {
+    background: url("/images/lm/yellow-light.png") repeat-x;
+}
