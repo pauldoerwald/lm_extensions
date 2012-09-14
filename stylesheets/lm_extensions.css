@@ -1,12 +1,3 @@
-/* The Rails "Flash" section; messages displayed to users on their [usually] subsequent request */
-div#flash {
-    color: blue;
-}
-
-div#flash_error {
-    color: red;
-}
-
 /* The default Rails error message styles */
 div.errorExplanation {
     padding-left: 1em;
