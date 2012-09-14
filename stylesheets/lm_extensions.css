@@ -54,7 +54,6 @@ table.headerleft th {
     vertical-align: top;
     text-align: right;
     padding-right: 1em;
-    white-space: nowrap;
 }
 
 table.headerleft td {
